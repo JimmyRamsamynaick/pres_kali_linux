@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux - Cybersécurité Offensive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Particules d'arrière-plan -->
+<div id="particles"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>KALI LINUX</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#intro" class="nav-link">Intro</a></li>
+            <li><a href="#qqoqcp" class="nav-link">QQOQCP</a></li>
+            <li><a href="#outils" class="nav-link">Outils</a></li>
+            <li><a href="#avantages" class="nav-link">Avantages</a></li>
+            <li><a href="#attention" class="nav-link">Attention</a></li>
+            <li><a href="#recommandations" class="nav-link">Usage</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <span class="terminal-title">root@kali:~#</span>
+            </div>
+            <div class="terminal-body">
+                <div class="typing-effect">
+                    <span class="prompt">┌──(root㉿kali)-[~]</span><br>
+                    <span class="prompt">└─$ </span><span id="typed-text"></span><span class="cursor">|</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="hero-title">KALI LINUX</h1>
+        <p class="hero-subtitle">Distribution spécialisée en cybersécurité offensive</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">600+</span>
+                <span class="stat-label">Outils préinstallés</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2013</span>
+                <span class="stat-label">Année de création</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Gratuit & Open Source</span>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</header>
+
+<!-- Introduction -->
+<section id="intro" class="section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-info-circle"></i>
+            Introduction
+        </h2>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p>Kali Linux est une distribution basée sur Debian, spécialement conçue pour la cybersécurité offensive. Elle intègre plus de 600 outils permettant de réaliser des tests d'intrusion, des analyses de vulnérabilités, et des investigations numériques.</p>
+                <p>Elle est largement utilisée par les professionnels et les étudiants en cybersécurité. Puissante et gratuite, Kali nécessite toutefois des connaissances techniques et un usage strictement légal.</p>
+                <p class="highlight">Elle constitue une référence incontournable pour apprendre, simuler et sécuriser les systèmes informatiques.</p>
+            </div>
+            <div class="intro-visual">
+                <div class="kali-logo">
+                    <i class="fab fa-linux"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QQOQCP -->
+<section id="qqoqcp" class="section dark">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-question-circle"></i>
+            QQOQCP - Analyse complète
+        </h2>
+        <div class="qqoqcp-grid">
+            <div class="qqoqcp-card" data-question="Qui">
+                <div class="card-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Qui ?</h3>
+                </div>
+                <div class="card-content">
+                    <p><strong>Développé par :</strong> Offensive Security</p>
+                    <p><strong>Utilisateurs :</strong> Professionnels de la cybersécurité, pentesters, red teams, formateurs, étudiants, hackers éthiques</p>
+                </div>
+            </div>
+
+            <div class="qqoqcp-card" data-question="Quoi">
+                <div class="card-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Quoi ?</h3>
+                </div>
+                <div class="card-content">
+                    <p>Distribution Linux spécialisée pour :</p>
+                    <ul>
+                        <li>Tests d'intrusion (pentesting)</li>
+                        <li>Analyse de vulnérabilités</li>
+                        <li>Rétro-ingénierie</li>
+                        <li>Cyberdéfense offensive</li>
+                        <li>Criminalistique numérique</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qqoqcp-card" data-question="Où">
+                <div class="card-header">
+                    <i class="fas fa-globe"></i>
+                    <h3>Où ?</h3>
+                </div>
+                <div class="card-content">
+                    <p>Disponible sur <strong>kali.org</strong></p>
+                    <p>Utilisable en :</p>
+                    <ul>
+                        <li>Live USB/CD</li>
+                        <li>Machine virtuelle</li>
+                        <li>WSL (Windows)</li>
+                        <li>Android (NetHunter)</li>
+                        <li>Cloud</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qqoqcp-card" data-question="Quand">
+                <div class="card-header">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Quand ?</h3>
+                </div>
+                <div class="card-content">
+                    <p><strong>2013 :</strong> Création (successeur de BackTrack)</p>
+                    <p><strong>2016 :</strong> Modèle "rolling release"</p>
+                    <p><strong>2023-2025 :</strong> Kali Purple (Blue Team)</p>
+                </div>
+            </div>
+
+            <div class="qqoqcp-card" data-question="Comment">
+                <div class="card-header">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Comment ?</h3>
+                </div>
+                <div class="card-content">
+                    <p>Installation standard Linux ou mode live</p>
+                    <p>Outils préconfigurés et sécurisés</p>
+                    <p>Formation aux techniques d'attaque pour mieux se défendre</p>
+                </div>
+            </div>
+
+            <div class="qqoqcp-card" data-question="Pourquoi">
+                <div class="card-header">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Pourquoi ?</h3>
+                </div>
+                <div class="card-content">
+                    <p>Standard de facto en cybersécurité offensive</p>
+                    <p>Formation des experts (OSCP, CEH)</p>
+                    <p>Automatisation des audits de sécurité</p>
+                    <p>Utilisée dans les CTF et formations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Outils -->
+<section id="outils" class="section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-toolbox"></i>
+            Outils essentiels
+        </h2>
+        <div class="tools-filter">
+            <button class="filter-btn active" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="reconnaissance">Reconnaissance</button>
+            <button class="filter-btn" data-category="exploitation">Exploitation</button>
+            <button class="filter-btn" data-category="web">Web</button>
+            <button class="filter-btn" data-category="password">Mots de passe</button>
+            <button class="filter-btn" data-category="network">Réseau</button>
+            <button class="filter-btn" data-category="wifi">Wi-Fi</button>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card" data-category="reconnaissance">
+                <div class="tool-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Nmap</h3>
+                <p>Scan de ports, détection de services et d'OS</p>
+                <div class="tool-tags">
+                    <span class="tag">Reconnaissance</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="exploitation">
+                <div class="tool-icon">
+                    <i class="fas fa-bomb"></i>
+                </div>
+                <h3>Metasploit</h3>
+                <p>Plateforme d'exploitation de failles avec base de données d'exploits</p>
+                <div class="tool-tags">
+                    <span class="tag">Exploitation</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Burp Suite</h3>
+                <p>Proxy pour intercepter et modifier les requêtes HTTP/HTTPS</p>
+                <div class="tool-tags">
+                    <span class="tag">Web</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="password">
+                <div class="tool-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3>Hydra</h3>
+                <p>Attaque par force brute sur de nombreux protocoles</p>
+                <div class="tool-tags">
+                    <span class="tag">Brute Force</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Wireshark</h3>
+                <p>Analyseur de paquets réseau (sniffer)</p>
+                <div class="tool-tags">
+                    <span class="tag">Analyse réseau</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="wifi">
+                <div class="tool-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>Aircrack-ng</h3>
+                <p>Suite pour le crack de réseaux Wi-Fi (WEP/WPA)</p>
+                <div class="tool-tags">
+                    <span class="tag">Wi-Fi</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>SQLmap</h3>
+                <p>Exploitation de failles SQLi (injections SQL)</p>
+                <div class="tool-tags">
+                    <span class="tag">SQL Injection</span>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="password">
+                <div class="tool-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3>John the Ripper</h3>
+                <p>Outil de cassage de mots de passe</p>
+                <div class="tool-tags">
+                    <span class="tag">Crack</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Avantages -->
+<section id="avantages" class="section dark">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-check-circle"></i>
+            Avantages
+        </h2>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Distribution spécialisée</h3>
+                <p>Conçue uniquement pour la cybersécurité avec plus de 600 outils préinstallés</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Gain de temps</h3>
+                <p>Évite l'installation manuelle des outils, tout est prêt à l'emploi</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Rolling release</h3>
+                <p>Système mis à jour en continu avec les dernières versions</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Outil pédagogique</h3>
+                <p>Utilisé en formation professionnelle et dans les concours CTF</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h3>Flexible</h3>
+                <p>Fonctionne en live USB, VM, conteneur Docker, WSL, Android</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Sécurité renforcée</h3>
+                <p>Tous les paquets sont signés numériquement</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Points d'attention -->
+<section id="attention" class="section warning">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-exclamation-triangle"></i>
+            Points d'attention
+        </h2>
+        <div class="warning-grid">
+            <div class="warning-card critical">
+                <div class="warning-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Utilisation légale uniquement</h3>
+                <p>Il est illégal d'utiliser ces outils sans l'autorisation explicite du propriétaire du système visé.</p>
+            </div>
+            <div class="warning-card high">
+                <div class="warning-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Compétences techniques requises</h3>
+                <p>Nécessite des connaissances en Linux, réseau, protocoles et sécurité.</p>
+            </div>
+            <div class="warning-card medium">
+                <div class="warning-icon">
+                    <i class="fas fa-bomb"></i>
+                </div>
+                <h3>Risque de mauvaise manipulation</h3>
+                <p>Peut provoquer des coupures réseau, effacer des données ou crasher un service.</p>
+            </div>
+            <div class="warning-card medium">
+                <div class="warning-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>Environnement isolé recommandé</h3>
+                <p>À utiliser en machine virtuelle ou laboratoire isolé.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recommandations -->
+<section id="recommandations" class="section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-lightbulb"></i>
+            Recommandations d'usage
+        </h2>
+        <div class="recommendations-grid">
+            <div class="recommendation-card">
+                <div class="rec-number">1</div>
+                <div class="rec-content">
+                    <h3><i class="fas fa-balance-scale"></i> Respecter le cadre légal</h3>
+                    <ul>
+                        <li>N'utiliser que dans un environnement contrôlé</li>
+                        <li>Toujours obtenir une autorisation écrite</li>
+                        <li>Se référer aux lois en vigueur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <div class="rec-number">2</div>
+                <div class="rec-content">
+                    <h3><i class="fas fa-desktop"></i> Utiliser un environnement sécurisé</h3>
+                    <ul>
+                        <li>Utiliser Kali en machine virtuelle</li>
+                        <li>Créer un lab local avec des machines cibles</li>
+                        <li>Désactiver les connexions réseau si nécessaire</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <div class="rec-number">3</div>
+                <div class="rec-content">
+                    <h3><i class="fas fa-book"></i> Maîtriser les outils</h3>
+                    <ul>
+                        <li>Ne jamais lancer un outil sans le comprendre</li>
+                        <li>Se former avec la documentation officielle</li>
+                        <li>Utiliser des plateformes d'apprentissage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recommendation-card">
+                <div class="rec-number">4</div>
+                <div class="rec-content">
+                    <h3><i class="fas fa-sync"></i> Mettre à jour régulièrement</h3>
+                    <ul>
+                        <li>Suivre les mises à jour de sécurité</li>
+                        <li>Vérifier la compatibilité des outils</li>
+                        <li>Surveiller les changements importants</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-terminal"></i> Kali Linux</h3>
+                <p>Distribution spécialisée en cybersécurité offensive</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources officielles</h3>
+                <ul>
+                    <li><a href="https://www.kali.org" target="_blank">Site officiel</a></li>
+                    <li><a href="https://www.kali.org/docs" target="_blank">Documentation</a></li>
+                    <li><a href="https://www.offensive-security.com" target="_blank">Offensive Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Plateformes d'apprentissage</h3>
+                <ul>
+                    <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
+                    <li><a href="https://www.hackthebox.com" target="_blank">HackTheBox</a></li>
+                    <li><a href="https://www.root-me.org" target="_blank">Root-Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Présentation Kali Linux. Usage éducatif uniquement.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
