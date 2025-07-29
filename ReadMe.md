@@ -119,7 +119,7 @@ Le site couvre 6 sections principales basées sur une analyse QQOQCP :
 ### Installation simple
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/kali-linux-presentation.git
+git clone https://github.com/JimmyRamsamynaick/pres_kali_linux.git
 
 # Accéder au dossier
 cd kali-linux-presentation
