@@ -788,6 +788,56 @@ body {
     color: var(--primary-color);
 }
 
+/* Style spécial pour le lien CyberChef */
+.footer-section a[href*="cyberchef"] {
+    color: #ff6b35 !important;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-left: -10px;
+}
+
+.footer-section a[href*="cyberchef"]:hover {
+    background: rgba(255, 107, 53, 0.1);
+    color: #ff8f5a !important;
+    transform: translateX(5px);
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+}
+
+.footer-section a[href*="cyberchef"] i {
+    color: #ff6b35;
+    font-size: 1.1rem;
+}
+
+/* Animation spéciale pour attirer l'attention */
+@keyframes cyberchef-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4); }
+    70% { box-shadow: 0 0 0 5px rgba(255, 107, 53, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0); }
+}
+
+.footer-section a[href*="cyberchef"]:hover {
+    animation: cyberchef-pulse 1.5s infinite;
+}
+
+/* Badge "NOUVEAU" optionnel */
+.footer-section a[href*="cyberchef"]::after {
+    content: "NOUVEAU";
+    background: #ff6b35;
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: auto;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -910,6 +960,16 @@ body {
     .filter-btn {
         font-size: 0.8rem;
         padding: 8px 16px;
+    }
+
+    /* Responsive pour lien CyberChef mobile */
+    .footer-section a[href*="cyberchef"] {
+        font-size: 0.95rem;
+    }
+
+    .footer-section a[href*="cyberchef"]::after {
+        font-size: 0.55rem;
+        padding: 1px 4px;
     }
 }
 
